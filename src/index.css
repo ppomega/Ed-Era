@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Bunken";
+  display: swap;
+  src: url("/Bunken.ttf");
+}
+@font-face {
+  font-family: "Metaluna";
+  display: swap;
+  src: url("/Metaluna.otf");
+}
+@theme {
+  --font-bunken: "Bunken";
+  --font-metaluna: "Metaluna";
+}

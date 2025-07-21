@@ -1,0 +1,14 @@
+input[type="range"]#slider {
+  accent-color: #ffe100;
+}
+input[type="range"]#slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+}
+input[type="range"]#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  bottom: 6px;
+}

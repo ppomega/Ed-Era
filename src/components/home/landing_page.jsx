@@ -6,8 +6,6 @@ function LandingPage() {
   useEffect(() => {
     if (textRef.current) {
       const b = baffle(textRef.current);
-      console.log(textRef);
-
       b.set({
         characters: "░▒█▓░<>Algo/█▒░█▓█░<>DSA▒",
         speed: 50,
@@ -16,10 +14,6 @@ function LandingPage() {
         b.start();
         textRef.current.style.color = "white";
       }, 1000);
-      textRef.current.textContent = textRef.current.textContent
-        .split("")
-        .reverse()
-        .join("");
       setTimeout(() => {
         b.reveal();
       }, 1400);
@@ -60,7 +54,7 @@ function LandingPage() {
         ref={textRef}
         className="text-8xl  font-metaluna absolute top-1/4 right-0 z-10"
       >
-        are-de
+        Ed-ERa
       </div>
     </>
   );

@@ -36,7 +36,9 @@ const Player = () => {
       select.current = dashPlayer;
       dashPlayer.initialize(
         videoElement,
-        `http://3.6.179.250:8000/file/${data.lecturer}/${data.name}/${data.lecture}/manifest.mpd`,
+        `${import.meta.env.VITE_SERVER}/file/${data.lecturer}/${data.name}/${
+          data.lecture
+        }/manifest.mpd`,
         true
       );
       if (dashPlayer.isDynamic()) {
